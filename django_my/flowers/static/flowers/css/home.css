@@ -1,0 +1,349 @@
+.your-image-class {
+    display: block; /* Сделать изображение блочным элементом */
+    margin: 0 auto; /* Центрировать по горизонтали */
+    text-align: center; /* Выравнивание по центру */
+}
+
+body{
+     background: burlywood !important;
+    min-height: 200vh;
+    overflow-y: scroll;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%; /* Размещаем по вертикальному центру экрана */
+    left: 50%; /* Размещаем по горизонтальному центру экрана */
+    transform: translate(-50%, -50%); /* Центрируем по центру экрана */
+    text-align: center; /* Центрируем текст по горизонтали */
+    color: rebeccapurple; /* Цвет текста (по вашему выбору) */
+    font-size: 24px; /* Размер шрифта (по вашему выбору) */
+    font-weight: bold; /* Жирный шрифт (по вашему выбору) */
+}
+
+.top_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: lightgreen;
+    width: 100%;
+    height: 15%;
+    border-bottom: 5px solid steelblue;
+    z-index: 2; /* Поверх остального контента */
+    display: flex;
+    align-items: center;
+     overflow: hidden;
+}
+
+
+.left_line {
+    top: 0;
+    height: 100%;
+    position: fixed;
+    background: skyblue;
+    width: 15%;
+    border-right: 5px solid seashell;
+    z-index: 3; /* Поверх верхней панели */
+}
+
+/*position: fixed;*/
+/*    top:120px;*/
+/*    right: 850px;*/
+/*    !*bottom: 750px;*!*/
+/*    height: 8%*/
+
+.right_line {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    right: 0;
+    background: skyblue;
+    width: 15%;
+    border-left: 5px solid seashell;
+    z-index: 3; /* Поверх верхней панели */
+}
+
+.left_left_line{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 15%; /* Ширина левой панели */
+    background: lightgreen;
+    width: 12%; /* Ширина дополнительной панели */
+    border-right: 5px solid steelblue;
+    z-index: 1; /* Поверх левой панели */
+}
+
+.bottom_line{
+    background: palevioletred;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    z-index: 2; /* Поверх остального контента, но снизу */
+}
+
+.bottom_bottom_line{
+    background: gold;
+    position: absolute;
+    bottom: -940px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid red;
+    z-index: 2; /* Поверх остального контента, но снизу */
+}
+.bottom_bottom_line ul {
+    list-style: none;
+    padding: 0;
+    left: 100px;
+}
+
+.bottom_bottom_line ul li {
+    display: flex;
+    align-items: center;
+    position: relative; /* Добавляем относительное позиционирование */
+    left: 710px; /* Задаем сдвиг вправо на 20 пикселей (можете изменить значение по вашему усмотрению) */
+    bottom: -200px;
+    color: magenta;
+}
+
+.frame {
+  border: 4px solid #e01b24; /* Цвет рамки */
+  border-radius: 10px; /* Закруглить углы рамки */
+  padding: 15px; /* Внутренний отступ внутри рамки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame h1,
+.frame h2 {
+  margin: 0; /* Убрать отступы у заголовков */
+}
+.bottom_bottom_line ul li i {
+    margin-right: 10px; /* Добавить некоторое пространство между значком и текстом */
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.top_line .bouquets{
+    position: relative;
+    left: 400px;
+    top: 10px;
+    list-style: none;
+
+}
+.top_line .info{
+    position: relative;
+    left: 440px;
+    top: 10px;
+    list-style: none;
+
+}
+
+.top_line .basket{
+    position: relative;
+    left: 470px;
+    top: 10px;
+    list-style: none;
+}
+
+.top_line .order{
+    position: relative;
+    left: 620px;
+    top: 10px;
+    list-style: none;
+
+
+}
+.top_line img{
+    position: relative;
+    left: 310px;
+    top: 9px;
+
+}
+aside button h2:hover{
+    color: saddlebrown;
+    transform: scale(1.09);
+    transition: transform .8s ease;
+
+}
+aside a h2:hover{
+    color: plum;
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+
+.link1{
+    position: relative;
+    left: 70px;
+    top: 165px;
+    list-style: none;
+    color: steelblue;
+    ;
+}
+
+.link2{
+    position: relative;
+    left: 60px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+
+.link3{
+    position: relative;
+    left: 50px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+
+.link4{
+    position: relative;
+    left: 60px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+.link5{
+    position: relative;
+    left: 33px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+.link6{
+    position: relative;
+    left: 20px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+.link7{
+    position: relative;
+    left: 50px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+.link8{
+    position: relative;
+    left: 50px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+.link9{
+    position: relative;
+    left: 50px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+.link10{
+    position: relative;
+    left: 50px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+
+.link11{
+    position: relative;
+    left: 70px;
+    top: -10px;
+    list-style: none;
+    color: steelblue;
+    text-decoration: none;
+}
+
+.vertical-line1 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 126px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+
+
+}
+.vertical-line2 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line3 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line4 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line5 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line6 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line7 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line8 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line9 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line10 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}
+.vertical-line11 {
+    border: none;
+    border-bottom: 4px solid blue; /* Устанавливаем стиль и цвет вертикальной линии */
+    height: 0px; /* Устанавливаем высоту линии (настройте по вашему усмотрению) */
+    margin-top: -10px;
+
+}

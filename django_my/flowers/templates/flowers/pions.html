@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список статей</title>
+</head>
+<body>
+    <h1>Список статей</h1>
+
+    {% for el in flowers %}
+        <div class="alert alert-warning">
+            <h3>{{ el.name }}</h3>
+            <p>{{ el.price }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
