@@ -5,9 +5,10 @@
 }
 
 body{
-     background: burlywood !important;
+     background: whitesmoke !important;
     min-height: 200vh;
     overflow-y: scroll;
+
 }
 
 .centered-text {
@@ -42,7 +43,7 @@ body{
     position: fixed;
     background: skyblue;
     width: 15%;
-    border-right: 5px solid seashell;
+    border-right: 5px solid steelblue;
     z-index: 3; /* Поверх верхней панели */
 }
 
@@ -59,7 +60,7 @@ body{
     right: 0;
     background: skyblue;
     width: 15%;
-    border-left: 5px solid seashell;
+    border-left: 5px solid steelblue;
     z-index: 3; /* Поверх верхней панели */
 }
 
@@ -347,3 +348,4 @@ aside a h2:hover{
     margin-top: -10px;
 
 }
+

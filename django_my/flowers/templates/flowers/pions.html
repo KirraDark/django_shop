@@ -1,18 +1,123 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Список статей</title>
-</head>
-<body>
-    <h1>Список статей</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'flowers/css/home.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/9823b53d7f.js" crossorigin="anonymous"></script>
 
+    <style>
+        /* Ваши стили */
+        .bouquets, .info, .basket, .order {
+            background: darkolivegreen;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+        }
+        .container {
+            max-height: 650px;
+            max-width: 1000px;
+            overflow-y: auto;
+            margin: 150px 0 0 520px;
+
+        }
+
+        .flower-container {
+            border: 2px solid black;
+            padding: 10px;
+            display: inline-block;
+            margin: 10px;
+
+        }
+
+        .flower-image {
+            width: 255px;
+            height: 400px;
+
+        }
+    </style>
+</head>
+<body class="custom-body">
+
+<div class="centered-text">
+    <h1></h1>
+</div>
+
+<aside class="left_line">
+</aside>
+
+ <aside class="left_left_line">
+        <a href="#" class=""><h2></h2></a>
+        <hr class="vertical-line1">
+        <a href="{% url 'pion' %}" class="link2"><h2>Пионы</h2></a>
+        <hr class="vertical-line2">
+
+        <a href="{% url 'orchids' %}" class="link3"><h2>Орхидеи</h2></a>
+        <hr class="vertical-line3">
+        <a href="#" class="link4"><h2>Лилии</h2></a>
+        <hr class="vertical-line4">
+        <a href="#" class="link5"><h2>Тюльпаны</h2></a>
+        <hr class="vertical-line5">
+        <a href="#" class="link6"><h2>Хризантемы</h2></a>
+        <hr class="vertical-line6">
+         <a href="#" class="link7"><h2>Гортензии</h2></a>
+        <hr class="vertical-line7">
+        <a href="#" class="link8"><h2>Ромашки</h2></a>
+        <hr class="vertical-line8">
+        <a href="#" class="link9"><h2>Гвоздики</h2></a>
+        <hr class="vertical-line9">
+        <a href="#" class="link10"><h2>Георгины</h2></a>
+        <hr class="vertical-line10">
+        <a href="#" class="link11"><h2>Розы</h2></a>
+        <hr class="vertical-line11">
+
+    </aside>
+
+<aside class="right_line">
+</aside>
+
+<aside class="top_line">
+    <img src="{% static 'flowers/img/pngwing.com.png' %}" width="200" height="150" alt="">
+    <button type="button" class="bouquets"><h2>Букеты</h2></button>
+    <button type="button" class="info"><h2>О Нас</h2></button>
+    <button type="button" class="basket"><h2>Корзина</h2></button>
+    <button type="button" class="order"><h2>Оформить заказ</h2></button>
+</aside>
+
+<aside class="bottom_line">
+</aside>
+
+<aside class="bottom_bottom_line">
+    <ul>
+        <li>
+            <div class="frame">
+                <h1><i class="fa-solid fa-heart fa-beat-fade" style="color: #e01b24;"></i></h1>
+                <h2>Спасибо, что остаётесь с нами!</h2>
+            </div>
+        </li>
+    </ul>
+</aside>
+
+
+<!-- Это ваш блок с данными, который будет появляться по центру -->
+<div class="container">
+    <h1></h1>
     {% for el in flowers %}
-        <div class="alert alert-warning">
-            <h3>{{ el.name }}</h3>
-            <p>{{ el.price }}</p>
-              <img src="{{ el.img.url }}">
-        </div>
+        <a href="{% url 'article_detail' article_id=el.id %}" class="flower-container">
+            <div>
+                <h3>{{ el.name }}</h3>
+                <p>{{ el.price }}</p>
+                <img src="{{ el.img.url }}" class="flower-image">
+            </div>
+        </a>
     {% endfor %}
+</div>
+
 </body>
 </html>
