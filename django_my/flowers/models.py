@@ -23,3 +23,4 @@ class orchids(models.Model):
 
     def __str__(self):
         return f"Название: {self.name}"
+

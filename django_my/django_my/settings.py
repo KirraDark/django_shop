@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-&dhw3k#j8=+t^-rug$1v(hm@5jjr=+6#g@zmd=cxmjj+^cg@!h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.JustKir.pythonanywhere.com',
+    'JustKir.pythonanywhere.com',
+]
+
 
 
 # Application definition
@@ -55,7 +59,7 @@ ROOT_URLCONF = 'django_my.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,10 +122,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static",
-#     # '/var/www/static/',  #!!!! это строчка не нужна ( она только нужна при выгрузке проекта на сервер)
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    # '/var/www/static/',  #!!!! это строчка не нужна ( она только нужна при выгрузке проекта на сервер)
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
